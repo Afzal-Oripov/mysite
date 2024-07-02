@@ -24,6 +24,7 @@ h2 {
     float:left;
     width:60%;
     padding:0 0 0 30px; 
+    background-color: #cc0033;
 }
 
 #sidebar { 
@@ -32,6 +33,7 @@ h2 {
     padding:10px;
     background:#efefef; 
     height:100%;
+    border-radius: 15%;
 }
 
 p.date { 
@@ -83,7 +85,7 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#efefef;
+    background:#f1c3c3;
 }
 .comment .info {
     font-weight:bold;
