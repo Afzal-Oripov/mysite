@@ -1,95 +1,112 @@
-body { 
-    margin:0;
-    padding:0;
-    font-family:helvetica, sans-serif;
-    background: #efefef; 
+/* Сброс стилей и базовые стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    color: #444;
+    line-height: 1.6;
 }
 
-a { 
-    color:#00abff;
-    text-decoration:none; 
+/* Ссылки */
+a {
+    color: #e5635e; /* Красный цвет для ссылок */
+    text-decoration: none;
 }
 
-h1 { 
-    font-weight:normal;
-    border-bottom:1px solid #bbb;
-    padding:0 0 10px 0;
+/* Заголовки */
+h1, h2 {
+    font-weight: normal;
+    margin-top: 0;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
 }
 
 h2 {
-    font-weight:normal;
-    margin:30px 0 0;
+    margin-top: 20px; /* Уменьшенный отступ для h2 */
 }
 
-#content { 
-    float:left;
-    width:60%;
-    padding:0 0 0 30px; 
-    background-color: #00a0cc;
+/* Основная область контента */
+#content {
+    float: right; /* Поменяли float на правый */
+    width: 70%; /* Увеличили ширину до 70% */
+    padding: 20px;
+    background-color: #52b788; /* Зеленый цвет для контента */
+    color: #fff; /* Белый цвет текста на зеленом фоне */
 }
 
-#sidebar { 
-    float:right;
-    width:30%;
-    padding:10px;
-    background:#efefef; 
-    height:100%;
-    border-radius: 15%;
+/* Боковая панель */
+#sidebar {
+    float: left; /* Поменяли float на левый */
+    width: 25%; /* Уменьшили ширину до 25% */
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #ffa931; /* Оранжевый цвет для боковой панели */
+    color: #333; /* Темный цвет текста на оранжевом фоне */
+    border-radius: 10px; /* Уменьшили радиус скругления */
 }
 
-p.date { 
-    color:#ccc;
-    font-family: georgia, serif;
+/* Параграф с датой */
+p.date {
+    color: #888;
+    font-family: 'Arial', sans-serif; /* Шрифт Arial */
     font-size: 12px;
-    font-style: italic; 
+    font-style: italic;
 }
 
-/* pagination */
-.pagination { 
-    margin:40px 0; 
-    font-weight:bold;
+/* Пагинация */
+.pagination {
+    margin-top: 30px;
+    font-weight: bold;
 }
 
-/* forms */
-label { 
-    float:left;
-    clear:both;
-    color:#333;
-    margin-bottom:4px; 
-}
-input, textarea { 
-    clear:both;
-    float:left;
-    margin:0 0 10px;
-    background:#ededed;
-    border:0;
-    padding:6px 10px;
-    font-size:12px;
-}
-input[type=submit] {
-    font-weight:bold;
-    background:#00abff;
-    color:#fff;
-    padding:10px 20px;
-    font-size:14px;
-    text-transform:uppercase; 
-}
-.errorlist { 
-    color:#cc0033;
-    float:left;
-    clear:both;
-    padding-left:10px; 
+/* Формы */
+label {
+    display: block;
+    color: #555;
+    margin-bottom: 8px; /* Уменьшили отступ снизу */
 }
 
-/* comments */
+input, textarea {
+    display: block;
+    margin-bottom: 12px; /* Увеличили отступ снизу */
+    background-color: #f2f2f2; /* Светло-серый фон */
+    border: 1px solid #ccc; /* Светло-серая рамка */
+    padding: 8px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    background-color: #ff6f69; /* Красный цвет для кнопки */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none; /* Убрали рамку */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.errorlist {
+    color: #cc0033;
+    padding-left: 12px; /* Увеличили отступ слева */
+}
+
+/* Комментарии */
 .comment {
-    padding:10px;
+    padding: 15px;
+    margin-bottom: 20px; /* Увеличили отступ между комментариями */
+    background-color: #d2dae2; /* Светло-серый фон */
+    border-radius: 5px;
 }
+
 .comment:nth-child(even) {
-    background:#f1c3c3;
+    background-color: #b2bec3; /* Серый фон для четных комментариев */
 }
+
 .comment .info {
-    font-weight:bold;
-    font-size:12px;
-    color:#666;
+    font-weight: bold;
+    font-size: 13px;
+    color: #666;
 }
